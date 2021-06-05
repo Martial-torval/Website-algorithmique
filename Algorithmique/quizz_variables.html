@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Exercices</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/blog-home.css">
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bgorange fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Algorithmique</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="variables.html">Variables</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test_conditionnels.html">Tests Conditionnels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fonctions.html">Fonctions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparaisons.html">Comparaisons</a>
+            <li>
+              <a class="nav-link" href="tableaux.html"> Tableaux</a>
+            </li>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="quizz_variables.html">Exercices</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+        <h1 class="my-4">Exercices</h1>
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Les variables</h2>
+            <p>Voici un quizz comportant vingts questions sur les variables, une seule réponse est valide :</p>
+            <form id="formQuestionP" onsubmit="resultQuestions(); return false;">
+              <fieldset>
+                <h4>Question 1</h4>
+                <label class="form-check-label">
+                  <legend>Qu'est ce qu'un algorithme ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb1" required>
+                  Une musique hyper rythmée
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb1" required>
+                  Des mathématiques
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb1" type="radio" name="QuestionNb1" required>
+                  Une suite d’instructions non-ambigus qui permettent d’arriver à un résultat donné
+                </div>
+
+                <h4>Question 2</h4>
+                <label class="form-check-label">
+                  <legend>Où sont stockés les informations en algorithmique ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb2" type="radio" name="QuestionNb2" required>
+                  Dans une variable
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb2" required>
+                  Dans un dépôt
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb2" required>
+                  Dans un répértoire
+                </div>
+
+
+                <h4>Question 3</h4>
+                <label class="form-check-label">
+                  <legend>Combien de caractéristiques comporte une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb3" required>
+                  5 caractéristiques
+                </div>
+                <div class="form-check ml-5 pl-3 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb3" required>
+                  2 caractéristiques
+                </div>
+                <div class="form-check ml-5 pl-3 pl-3">
+                  <input class="form-check-input" id="correctNb3" type="radio" name="QuestionNb3" required>
+                  4 caractéristiques
+                </div>
+
+
+                <h4>Question 4</h4>
+                <label class="form-check-label">
+                  <legend>Quels sont les caractéristiques d'une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb4" type="radio" name="QuestionNb4" required>
+                  nom, type, valeur, affectation
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb4" required>
+                  nombre, valeur, opérateur, resultat
+                </div>
+
+
+                <h4>Question 5</h4>
+                <label class="form-check-label">
+                  <legend>Le nom d'une variable commence toujours par :</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb5" required>
+                  Une majuscule
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb5" required>
+                  Un numéro
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb5" type="radio" name="QuestionNb5" required>
+                  Une minuscule
+                </div>
+
+
+                <h4>Question 6</h4>
+                <label class="form-check-label">
+                  <legend>Quels sont les types primitifs d'une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb6" type="radio" name="QuestionNb6" required>
+                  Nombre entier, nombre décimal, caractère, booléen
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb6" required>
+                  Chaine, nombre entier, caractère, booléen
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb6" required>
+                  Booléen, numéro, lettre, valeur
+                </div>
+
+
+                <h4>Question 7</h4>
+                <label class="form-check-label">
+                  <legend>De quel type est une Chaine dans une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb7" required>
+                  Un type primitif
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb7" type="radio" name="QuestionNb7" required>
+                  Un type non-primitif
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb7" required>
+                  Un type aléatoire
+                </div>
+
+
+                <h4>Question 8</h4>
+                <label class="form-check-label"class="form-check-label">
+                  <legend>Qu'est-ce qu'une affectation ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb8" required>
+                  Faire une comparaison entre plusieurs valeurs
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb8" required>
+                  Calculer deux nombres entiers
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb8" type="radio" name="QuestionNb8" required>
+                  Attribuer des valeurs ou des expressions à une variable
+                </div>
+
+
+                <h4>Question 9</h4>
+                <label class="form-check-label">
+                  <legend>En algorithmie, quel symbole utilise t-on pour effectuer une affectation ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb9" required>
+                  +
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb9" required>
+                  =
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb9" type="radio" name="QuestionNb9" required>
+                  &lt;-
+                </div>
+
+
+                <h4>Question 10</h4>
+                <label class="form-check-label">
+                  <legend>Parmi cette liste de variables, laquelle est correctement déclaré et affecté ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb10" required>
+                  Chaine prenomprof = "Daniel"
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb10" required>
+                  Chaine PrenomProf + Daniel
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb10" type="radio" name="QuestionNb10" required>
+                  Chaine prenomProf &lt;- "Daniel"
+                </div>
+
+
+                <h4>Question 11</h4>
+                <label class="form-check-label">
+                  <legend>Qu'est ce qu'un algorithme ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb11" required>
+                  Une musique hyper rythmée
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb11" required>
+                  Des mathématiques
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb11" type="radio" name="QuestionNb11" required required>
+                  Une suite d’instructions non-ambigus qui permet d’arriver à un résultat donné
+                </div>
+
+
+                <h4>Question 12</h4>
+                <label class="form-check-label">
+                  <legend>Où sont stockés les informations en algorithmie ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb12" type="radio" name="QuestionNb12" required>
+                  Dans une variable
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb12" required>
+                  Dans un dépôt
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb12" required>
+                  Dans un répértoire
+                </div>
+
+
+                <h4>Question 13</h4>
+                <label class="form-check-label">
+                  <legend>Combien de caractéristiques comporte une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb13" required>
+                  5 caractéristiques
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb13" required>
+                  2 caractéristiques
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb13" type="radio" name="QuestionNb13" required>
+                  4 caractéristiques
+                </div>
+
+
+                <h4>Question 14</h4>
+                <label class="form-check-label">
+                  <legend>Quels sont les caractéristiques d'une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb14" type="radio" name="QuestionNb14" required>
+                  nom, type, valeur, affectation
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb14" required>
+                  nombre, valeur, opérateur, resultat
+                </div>
+
+
+                <h4>Question 15</h4>
+                <label class="form-check-label">
+                  <legend>Le nom d'une variable commence toujours par :</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb15" required>
+                  Une majuscule
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb15" required>
+                  Un numéro
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb15" type="radio" name="QuestionNb15" required>
+                  Une minuscule
+                </div>
+
+
+                <h4>Question 16</h4>
+                <label class="form-check-label">
+                  <legend>Quels sont les types primitifs d'une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb16" type="radio" name="QuestionNb16" required>
+                  Nombre entier, nombre décimal, caractère, booléen
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb16" required>
+                  Chaine, nombre entier, caractère, booléen
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb16" required>
+                  Booléen, numéro, lettre, valeur
+                </div>
+
+
+                <h4>Question 17</h4>
+                <label class="form-check-label">
+                  <legend>De quel type est une Chaine dans une variable ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb17" required>
+                  Un type primitif
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb17" type="radio" name="QuestionNb17" required>
+                  Un type non-primitif
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb17" required>
+                  Un type aléatoire
+                </div>
+
+
+                <h4>Question 18</h4>
+                <label class="form-check-label">
+                  <legend>Qu'est-ce qu'une affectation ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb18" required>
+                  Faire une comparaison entre plusieurs valeurs
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb18" required>
+                  Calculer deux nombres entiers
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb18" type="radio" name="QuestionNb18" required>
+                  Attribuer des valeurs ou des expressions à une variable
+                </div>
+
+
+                <h4>Question 19</h4>
+                <label class="form-check-label">
+                  <legend>En algorithmie, quel symbole utilise t-on pour effectuer une affectation ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb19" required>+
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb19" required>=
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb19" type="radio" name="QuestionNb19" required>&lt;-
+                </div>
+
+
+                <h4>Question 20</h4>
+                <label class="form-check-label">
+                  <legend>Parmi cette liste de variables, laquelle est correctement déclaré et affecté ?</legend>
+                </label>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb20" required>
+                  Chaine prenomprof = "Daniel"
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" type="radio" name="QuestionNb20" required>
+                  Chaine PrenomProf + Daniel
+                </div>
+                <div class="form-check ml-5 pl-3">
+                  <input class="form-check-input" id="correctNb20" type="radio" name="QuestionNb20" required>
+                  Chaine prenomProf &lt;- "Daniel"
+                </div>
+
+                <div class="p-2">
+                  <input class="btn" type="submit" value="Valider">
+                </div>
+                <p>Bonne réponse : <span id="nbCorrect"></span></p>
+                <p>Mauvaise réponse : <span id="nbIncorrect"></span></p>
+                <p>Résultat : <span id="result"> Votre score !</span></p>
+                <p><span id="appreciation"></span></p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar Widgets Column -->
+      <aside class="col-md-4">
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Catégories</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="quizz_variables.html">Variables</a>
+                  </li>
+                  <li>
+                    <a href="#">Test conditionnels</a>
+                  </li>
+                  <li>
+                    <a href="#">Fonctions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <!-- /.container -->
+  <!-- <h3>Exercices</h3>
+  <form id="formExerciceP" onsubmit="resultExercices(); return false;">
+  <fieldset>
+  <legend>Bonne chance !</legend>
+  <h4>Exercice 1 :</h4>
+  <p>Déclarer une variable "marqueVoiture" dans laquelle vous affecterais : "Ferrari"</p>
+  <input type="text" id="reponseQ1" required>
+  <input type="submit"  id="validQ1" value="Valider">
+  <input type="button" id="answerQ1" value="Réponse" onclick="gotAnswer(); return false;">
+  <h4>Exercice 2 :</h4>
+  <p>Donner </p>
+</fieldset> -->
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+</html>

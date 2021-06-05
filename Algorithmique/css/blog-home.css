@@ -1,0 +1,32 @@
+body {
+  padding-top: 54px;
+  background-color: rgba(232, 226, 226, 0.5);
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+nav {
+  background: #f2583e;
+}
+
+
+.bgorange {
+  background-color: #f2583e;
+}
+
+h4
+{
+  border-bottom: 1px solid #f2583e;
+  color: #f2583e;
+  margin: 2.5%;
+}
+
+legend
+{
+  font-size: 1.05em;
+  font-weight: bold;
+}
