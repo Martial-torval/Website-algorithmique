@@ -1,4 +1,4 @@
-# Website-algorithmique
+# Projet Web : Algorithmique
 
 Ce projet à été réalisé lors de ma formation Passerelle Numérique (Formation développeur web Full-Stack) de 8 mois à l'Ecole Centrale de Marseille.
 
